@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cpx-base" />
+        <module name="cpx-agent-service" />
+        <module name="cpx-interface" />
+        <module name="cpx-agent-gateway" />
+        <module name="cpx-test-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cpx-agent-gateway" options="-parameters" />
+      <module name="cpx-agent-service" options="-parameters" />
+      <module name="cpx-base" options="-parameters" />
+      <module name="cpx-gateway" options="" />
+      <module name="cpx-interface" options="-parameters" />
+      <module name="cpx-parent" options="" />
+      <module name="cpx-service" options="" />
+      <module name="cpx-test-service" options="-parameters" />
+    </option>
+  </component>
+</project>

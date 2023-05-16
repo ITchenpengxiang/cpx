@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c1d65ab-d254-4caa-8edc-e0bd9e89e4a1" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$USER_HOME$/developEnvironment/maven/apache-maven-3.6.3/repository" />
+        <option name="mavenHome" value="$USER_HOME$/developEnvironment/maven/apache-maven-3.6.3" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="$USER_HOME$/developEnvironment/maven/apache-maven-3.6.3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NayqDLTKEyoGCkCLZqBGWthelR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/chenpengxiang/Documents/code/cpx-parent/cpx-gateway/cpx-agent-gateway/src/main/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.29770115",
+    "settings.editor.selected.configurable": "terminal",
+    "spring.configuration.checksum": "d522f561dd822bb582946527813e1241"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cpx-gateway/cpx-agent-gateway/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cpx.agent.gateway.filter" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AgentGatewayApplication">
+    <configuration name="FinalShell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cpx.cpxtestservice.controller.FinalShell" />
+      <module name="cpx-test-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cpx.cpxtestservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CpxBaseApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cpx-base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cpx.base.cpxbase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cpx.base.cpxbase" />
+      <option name="MAIN_CLASS_NAME" value="com.cpx.base.cpxbase.CpxBaseApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgentGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cpx-agent-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cpx.agent.gateway.AgentGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cpx.agent.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CpxAgentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cpx-agent-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cpx.agent.CpxAgentServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cpx.agent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CpxBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cpx-base" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cpx.base.cpxbase.CpxBaseApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cpx.base.cpxbase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CpxTestServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cpx-test-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cpx.cpxtestservice.CpxTestServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AgentGatewayApplication" />
+        <item itemvalue="Spring Boot.CpxAgentServiceApplication" />
+        <item itemvalue="Spring Boot.CpxBaseApplication" />
+        <item itemvalue="Application.FinalShell" />
+        <item itemvalue="JUnit.CpxBaseApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c1d65ab-d254-4caa-8edc-e0bd9e89e4a1" name="Changes" comment="" />
+      <created>1679916676716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679916676716</updated>
+      <workItem from="1679916678435" duration="621000" />
+      <workItem from="1679917337487" duration="1311000" />
+      <workItem from="1681897983589" duration="1668000" />
+      <workItem from="1681985646882" duration="1035000" />
+      <workItem from="1682068013912" duration="146000" />
+      <workItem from="1682068240916" duration="2237000" />
+      <workItem from="1682233140370" duration="1218000" />
+      <workItem from="1682236316485" duration="611000" />
+      <workItem from="1682328323602" duration="122000" />
+      <workItem from="1682331219545" duration="99000" />
+      <workItem from="1683277221171" duration="330000" />
+      <workItem from="1683533781373" duration="736000" />
+      <workItem from="1683534522499" duration="1000" />
+      <workItem from="1683534543046" duration="1032000" />
+      <workItem from="1683535685103" duration="397000" />
+      <workItem from="1683536113006" duration="404000" />
+      <workItem from="1683537687033" duration="214000" />
+      <workItem from="1683537913511" duration="1448000" />
+      <workItem from="1683539446847" duration="681000" />
+      <workItem from="1683540132350" duration="237000" />
+      <workItem from="1683540405514" duration="80000" />
+      <workItem from="1683540521147" duration="297000" />
+      <workItem from="1683540841926" duration="90000" />
+      <workItem from="1683540937661" duration="327000" />
+      <workItem from="1683796578353" duration="767000" />
+      <workItem from="1684133681102" duration="1416000" />
+      <workItem from="1684136127352" duration="142000" />
+      <workItem from="1684136554453" duration="1000" />
+      <workItem from="1684136557812" duration="2000" />
+      <workItem from="1684137187542" duration="1102000" />
+      <workItem from="1684138334009" duration="34000" />
+      <workItem from="1684138403286" duration="487000" />
+      <workItem from="1684142308514" duration="31000" />
+      <workItem from="1684142401624" duration="117000" />
+      <workItem from="1684142587278" duration="24000" />
+      <workItem from="1684142623474" duration="560000" />
+      <workItem from="1684143312977" duration="784000" />
+      <workItem from="1684144119516" duration="1009000" />
+      <workItem from="1684145132763" duration="103000" />
+      <workItem from="1684202900622" duration="530000" />
+      <workItem from="1684204935866" duration="291000" />
+      <workItem from="1684205790717" duration="632000" />
+      <workItem from="1684206429661" duration="10863000" />
+      <workItem from="1684225938146" duration="224000" />
+      <workItem from="1684226253496" duration="115000" />
+      <workItem from="1684226461100" duration="106000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/cpx-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-base/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-gateway/cpx-agent-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-service/cpx-agent-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-service/cpx-test-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-service/cpx-test-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
