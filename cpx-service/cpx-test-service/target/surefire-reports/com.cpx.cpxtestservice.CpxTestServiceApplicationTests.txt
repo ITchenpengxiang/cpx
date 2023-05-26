@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.cpx.cpxtestservice.CpxTestServiceApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.046 s <<< FAILURE! - in com.cpx.cpxtestservice.CpxTestServiceApplicationTests
-com.cpx.cpxtestservice.CpxTestServiceApplicationTests  Time elapsed: 0.043 s  <<< ERROR!
-java.lang.NoClassDefFoundError: org/apache/logging/log4j/spi/AbstractLoggerAdapter
-Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.spi.AbstractLoggerAdapter
-

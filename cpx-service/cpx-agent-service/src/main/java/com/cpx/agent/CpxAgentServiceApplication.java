@@ -1,5 +1,8 @@
 package com.cpx.agent;
 
+
+
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -12,6 +15,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @SpringBootApplication
 @EnableFeignClients(basePackages = "com.cpx.apis")
+@MapperScan(basePackages = "com.cpx.agent.mapper")
 public class CpxAgentServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(CpxAgentServiceApplication.class, args);

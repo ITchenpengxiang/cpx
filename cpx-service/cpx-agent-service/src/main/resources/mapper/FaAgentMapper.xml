@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cpx.agent.mapper.FaAgentMapper">
+  <resultMap id="BaseResultMap" type="com.cpx.agent.domain.FaAgent">
+    <!--@mbg.generated-->
+    <!--@Table fa_agent-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="agent_code" jdbcType="VARCHAR" property="agentCode" />
+    <result column="agent_name" jdbcType="VARCHAR" property="agentName" />
+    <result column="recommend_id" jdbcType="VARCHAR" property="recommendId" />
+    <result column="recommend_code" jdbcType="VARCHAR" property="recommendCode" />
+    <result column="recommend_name" jdbcType="VARCHAR" property="recommendName" />
+    <result column="practicing_certificate_code" jdbcType="VARCHAR" property="practicingCertificateCode" />
+    <result column="practicing_certificate_name" jdbcType="VARCHAR" property="practicingCertificateName" />
+    <result column="practicing_certificate_date" jdbcType="DATE" property="practicingCertificateDate" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="nationality" jdbcType="VARCHAR" property="nationality" />
+    <result column="nationality_chi" jdbcType="VARCHAR" property="nationalityChi" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="marital_state" jdbcType="VARCHAR" property="maritalState" />
+    <result column="marital_state_chi" jdbcType="VARCHAR" property="maritalStateChi" />
+    <result column="political_outlook" jdbcType="VARCHAR" property="politicalOutlook" />
+    <result column="political_outlook_chi" jdbcType="VARCHAR" property="politicalOutlookChi" />
+    <result column="nation" jdbcType="VARCHAR" property="nation" />
+    <result column="nation_chi" jdbcType="VARCHAR" property="nationChi" />
+    <result column="blood_type" jdbcType="VARCHAR" property="bloodType" />
+    <result column="blood_type_chi" jdbcType="VARCHAR" property="bloodTypeChi" />
+    <result column="native_place" jdbcType="VARCHAR" property="nativePlace" />
+    <result column="registered_residence" jdbcType="VARCHAR" property="registeredResidence" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="highest_education" jdbcType="VARCHAR" property="highestEducation" />
+    <result column="highest_education_chi" jdbcType="VARCHAR" property="highestEducationChi" />
+    <result column="annual_income_range" jdbcType="VARCHAR" property="annualIncomeRange" />
+    <result column="ident_type" jdbcType="VARCHAR" property="identType" />
+    <result column="ident_type_chi" jdbcType="VARCHAR" property="identTypeChi" />
+    <result column="ident_no" jdbcType="VARCHAR" property="identNo" />
+    <result column="cert_start_date" jdbcType="DATE" property="certStartDate" />
+    <result column="cert_expiry_date" jdbcType="DATE" property="certExpiryDate" />
+    <result column="branch_id" jdbcType="VARCHAR" property="branchId" />
+    <result column="branch_office_code" jdbcType="VARCHAR" property="branchOfficeCode" />
+    <result column="branch_office_name" jdbcType="VARCHAR" property="branchOfficeName" />
+    <result column="team_code" jdbcType="VARCHAR" property="teamCode" />
+    <result column="team_name" jdbcType="VARCHAR" property="teamName" />
+    <result column="workplace" jdbcType="VARCHAR" property="workplace" />
+    <result column="agent_state" jdbcType="VARCHAR" property="agentState" />
+    <result column="aptitude_state" jdbcType="VARCHAR" property="aptitudeState" />
+    <result column="aptitude_resule" jdbcType="VARCHAR" property="aptitudeResule" />
+    <result column="interview_state" jdbcType="VARCHAR" property="interviewState" />
+    <result column="interview_results" jdbcType="VARCHAR" property="interviewResults" />
+    <result column="update_date" jdbcType="DATE" property="updateDate" />
+    <result column="temporary_storage" jdbcType="VARCHAR" property="temporaryStorage" />
+    <result column="relatives_stay_our_company" jdbcType="VARCHAR" property="relativesStayOurCompany" />
+    <result column="same_experience_industry" jdbcType="VARCHAR" property="sameExperienceIndustry" />
+    <result column="sign_contract_concurrent_post" jdbcType="VARCHAR" property="signContractConcurrentPost" />
+    <result column="current_job_station" jdbcType="VARCHAR" property="currentJobStation" />
+    <result column="urgent_name" jdbcType="VARCHAR" property="urgentName" />
+    <result column="urgent_phone" jdbcType="VARCHAR" property="urgentPhone" />
+    <result column="position_type" jdbcType="VARCHAR" property="positionType" />
+    <result column="position_type_chi" jdbcType="VARCHAR" property="positionTypeChi" />
+    <result column="card_front_url" jdbcType="VARCHAR" property="cardFrontUrl" />
+    <result column="card_reverse_url" jdbcType="VARCHAR" property="cardReverseUrl" />
+    <result column="personalPic_url" jdbcType="VARCHAR" property="personalpicUrl" />
+    <result column="education_url" jdbcType="VARCHAR" property="educationUrl" />
+    <result column="education_certification_report_url" jdbcType="VARCHAR" property="educationCertificationReportUrl" />
+    <result column="income_certificate" jdbcType="VARCHAR" property="incomeCertificate" />
+    <result column="del_flag" jdbcType="VARCHAR" property="delFlag" />
+    <result column="operator" jdbcType="VARCHAR" property="operator" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="modify_date" jdbcType="TIMESTAMP" property="modifyDate" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="awards" jdbcType="VARCHAR" property="awards" />
+    <result column="specialties" jdbcType="VARCHAR" property="specialties" />
+    <result column="hobbies" jdbcType="VARCHAR" property="hobbies" />
+    <result column="cert_validity_type" jdbcType="VARCHAR" property="certValidityType" />
+    <result column="cert_validity_type_chi" jdbcType="VARCHAR" property="certValidityTypeChi" />
+    <result column="personal_pic_url" jdbcType="VARCHAR" property="personalPicUrl" />
+    <result column="agent_grade" jdbcType="VARCHAR" property="agentGrade" />
+    <result column="agent_grade_chi" jdbcType="VARCHAR" property="agentGradeChi" />
+    <result column="sign_contract_status" jdbcType="VARCHAR" property="signContractStatus" />
+    <result column="sign_contract_process" jdbcType="VARCHAR" property="signContractProcess" />
+    <result column="signing_state" jdbcType="VARCHAR" property="signingState" />
+    <result column="excellent_agent_introduced" jdbcType="VARCHAR" property="excellentAgentIntroduced" />
+    <result column="addr_provence_code" jdbcType="VARCHAR" property="addrProvenceCode" />
+    <result column="addr_provence_name" jdbcType="VARCHAR" property="addrProvenceName" />
+    <result column="addr_city_code" jdbcType="VARCHAR" property="addrCityCode" />
+    <result column="addr_city_name" jdbcType="VARCHAR" property="addrCityName" />
+    <result column="addr_county_code" jdbcType="VARCHAR" property="addrCountyCode" />
+    <result column="addr_county_name" jdbcType="VARCHAR" property="addrCountyName" />
+    <result column="reg_provence_code" jdbcType="VARCHAR" property="regProvenceCode" />
+    <result column="reg_provence_name" jdbcType="VARCHAR" property="regProvenceName" />
+    <result column="reg_city_code" jdbcType="VARCHAR" property="regCityCode" />
+    <result column="reg_city_name" jdbcType="VARCHAR" property="regCityName" />
+    <result column="reg_county_code" jdbcType="VARCHAR" property="regCountyCode" />
+    <result column="reg_county_name" jdbcType="VARCHAR" property="regCountyName" />
+    <result column="native_provence_code" jdbcType="VARCHAR" property="nativeProvenceCode" />
+    <result column="native_provence_name" jdbcType="VARCHAR" property="nativeProvenceName" />
+    <result column="native_city_code" jdbcType="VARCHAR" property="nativeCityCode" />
+    <result column="native_city_name" jdbcType="VARCHAR" property="nativeCityName" />
+    <result column="native_county_code" jdbcType="VARCHAR" property="nativeCountyCode" />
+    <result column="native_county_name" jdbcType="VARCHAR" property="nativeCountyName" />
+    <result column="detail_complete" jdbcType="VARCHAR" property="detailComplete" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="contract_no" jdbcType="VARCHAR" property="contractNo" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, agent_code, agent_name, recommend_id, recommend_code, recommend_name, practicing_certificate_code, 
+    practicing_certificate_name, practicing_certificate_date, phone, nationality, nationality_chi, 
+    sex, birthday, marital_state, marital_state_chi, political_outlook, political_outlook_chi, 
+    nation, nation_chi, blood_type, blood_type_chi, native_place, registered_residence, 
+    address, email, highest_education, highest_education_chi, annual_income_range, ident_type, 
+    ident_type_chi, ident_no, cert_start_date, cert_expiry_date, branch_id, branch_office_code, 
+    branch_office_name, team_code, team_name, workplace, agent_state, aptitude_state, 
+    aptitude_resule, interview_state, interview_results, update_date, temporary_storage, 
+    relatives_stay_our_company, same_experience_industry, sign_contract_concurrent_post, 
+    current_job_station, urgent_name, urgent_phone, position_type, position_type_chi, 
+    card_front_url, card_reverse_url, personalPic_url, education_url, education_certification_report_url, 
+    income_certificate, del_flag, `operator`, create_date, modify_date, remark, awards, 
+    specialties, hobbies, cert_validity_type, cert_validity_type_chi, personal_pic_url, 
+    agent_grade, agent_grade_chi, sign_contract_status, sign_contract_process, signing_state, 
+    excellent_agent_introduced, addr_provence_code, addr_provence_name, addr_city_code, 
+    addr_city_name, addr_county_code, addr_county_name, reg_provence_code, reg_provence_name, 
+    reg_city_code, reg_city_name, reg_county_code, reg_county_name, native_provence_code, 
+    native_provence_name, native_city_code, native_city_name, native_county_code, native_county_name, 
+    detail_complete, user_id, contract_no
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from fa_agent
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    <!--@mbg.generated-->
+    delete from fa_agent
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.cpx.agent.domain.FaAgent">
+    <!--@mbg.generated-->
+    insert into fa_agent (id, agent_code, agent_name, 
+      recommend_id, recommend_code, recommend_name, 
+      practicing_certificate_code, practicing_certificate_name, 
+      practicing_certificate_date, phone, nationality, 
+      nationality_chi, sex, birthday, 
+      marital_state, marital_state_chi, political_outlook, 
+      political_outlook_chi, nation, nation_chi, 
+      blood_type, blood_type_chi, native_place, 
+      registered_residence, address, email, 
+      highest_education, highest_education_chi, 
+      annual_income_range, ident_type, ident_type_chi, 
+      ident_no, cert_start_date, cert_expiry_date, 
+      branch_id, branch_office_code, branch_office_name, 
+      team_code, team_name, workplace, 
+      agent_state, aptitude_state, aptitude_resule, 
+      interview_state, interview_results, update_date, 
+      temporary_storage, relatives_stay_our_company, 
+      same_experience_industry, sign_contract_concurrent_post, 
+      current_job_station, urgent_name, urgent_phone, 
+      position_type, position_type_chi, card_front_url, 
+      card_reverse_url, personalPic_url, education_url, 
+      education_certification_report_url, income_certificate, 
+      del_flag, `operator`, create_date, 
+      modify_date, remark, awards, 
+      specialties, hobbies, cert_validity_type, 
+      cert_validity_type_chi, personal_pic_url, agent_grade, 
+      agent_grade_chi, sign_contract_status, sign_contract_process, 
+      signing_state, excellent_agent_introduced, 
+      addr_provence_code, addr_provence_name, addr_city_code, 
+      addr_city_name, addr_county_code, addr_county_name, 
+      reg_provence_code, reg_provence_name, reg_city_code, 
+      reg_city_name, reg_county_code, reg_county_name, 
+      native_provence_code, native_provence_name, 
+      native_city_code, native_city_name, native_county_code, 
+      native_county_name, detail_complete, user_id, 
+      contract_no)
+    values (#{id,jdbcType=VARCHAR}, #{agentCode,jdbcType=VARCHAR}, #{agentName,jdbcType=VARCHAR}, 
+      #{recommendId,jdbcType=VARCHAR}, #{recommendCode,jdbcType=VARCHAR}, #{recommendName,jdbcType=VARCHAR}, 
+      #{practicingCertificateCode,jdbcType=VARCHAR}, #{practicingCertificateName,jdbcType=VARCHAR}, 
+      #{practicingCertificateDate,jdbcType=DATE}, #{phone,jdbcType=VARCHAR}, #{nationality,jdbcType=VARCHAR}, 
+      #{nationalityChi,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}, #{birthday,jdbcType=DATE}, 
+      #{maritalState,jdbcType=VARCHAR}, #{maritalStateChi,jdbcType=VARCHAR}, #{politicalOutlook,jdbcType=VARCHAR}, 
+      #{politicalOutlookChi,jdbcType=VARCHAR}, #{nation,jdbcType=VARCHAR}, #{nationChi,jdbcType=VARCHAR}, 
+      #{bloodType,jdbcType=VARCHAR}, #{bloodTypeChi,jdbcType=VARCHAR}, #{nativePlace,jdbcType=VARCHAR}, 
+      #{registeredResidence,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{highestEducation,jdbcType=VARCHAR}, #{highestEducationChi,jdbcType=VARCHAR}, 
+      #{annualIncomeRange,jdbcType=VARCHAR}, #{identType,jdbcType=VARCHAR}, #{identTypeChi,jdbcType=VARCHAR}, 
+      #{identNo,jdbcType=VARCHAR}, #{certStartDate,jdbcType=DATE}, #{certExpiryDate,jdbcType=DATE}, 
+      #{branchId,jdbcType=VARCHAR}, #{branchOfficeCode,jdbcType=VARCHAR}, #{branchOfficeName,jdbcType=VARCHAR}, 
+      #{teamCode,jdbcType=VARCHAR}, #{teamName,jdbcType=VARCHAR}, #{workplace,jdbcType=VARCHAR}, 
+      #{agentState,jdbcType=VARCHAR}, #{aptitudeState,jdbcType=VARCHAR}, #{aptitudeResule,jdbcType=VARCHAR}, 
+      #{interviewState,jdbcType=VARCHAR}, #{interviewResults,jdbcType=VARCHAR}, #{updateDate,jdbcType=DATE}, 
+      #{temporaryStorage,jdbcType=VARCHAR}, #{relativesStayOurCompany,jdbcType=VARCHAR}, 
+      #{sameExperienceIndustry,jdbcType=VARCHAR}, #{signContractConcurrentPost,jdbcType=VARCHAR}, 
+      #{currentJobStation,jdbcType=VARCHAR}, #{urgentName,jdbcType=VARCHAR}, #{urgentPhone,jdbcType=VARCHAR}, 
+      #{positionType,jdbcType=VARCHAR}, #{positionTypeChi,jdbcType=VARCHAR}, #{cardFrontUrl,jdbcType=VARCHAR}, 
+      #{cardReverseUrl,jdbcType=VARCHAR}, #{personalpicUrl,jdbcType=VARCHAR}, #{educationUrl,jdbcType=VARCHAR}, 
+      #{educationCertificationReportUrl,jdbcType=VARCHAR}, #{incomeCertificate,jdbcType=VARCHAR}, 
+      #{delFlag,jdbcType=VARCHAR}, #{operator,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{modifyDate,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR}, #{awards,jdbcType=VARCHAR}, 
+      #{specialties,jdbcType=VARCHAR}, #{hobbies,jdbcType=VARCHAR}, #{certValidityType,jdbcType=VARCHAR}, 
+      #{certValidityTypeChi,jdbcType=VARCHAR}, #{personalPicUrl,jdbcType=VARCHAR}, #{agentGrade,jdbcType=VARCHAR}, 
+      #{agentGradeChi,jdbcType=VARCHAR}, #{signContractStatus,jdbcType=VARCHAR}, #{signContractProcess,jdbcType=VARCHAR}, 
+      #{signingState,jdbcType=VARCHAR}, #{excellentAgentIntroduced,jdbcType=VARCHAR}, 
+      #{addrProvenceCode,jdbcType=VARCHAR}, #{addrProvenceName,jdbcType=VARCHAR}, #{addrCityCode,jdbcType=VARCHAR}, 
+      #{addrCityName,jdbcType=VARCHAR}, #{addrCountyCode,jdbcType=VARCHAR}, #{addrCountyName,jdbcType=VARCHAR}, 
+      #{regProvenceCode,jdbcType=VARCHAR}, #{regProvenceName,jdbcType=VARCHAR}, #{regCityCode,jdbcType=VARCHAR}, 
+      #{regCityName,jdbcType=VARCHAR}, #{regCountyCode,jdbcType=VARCHAR}, #{regCountyName,jdbcType=VARCHAR}, 
+      #{nativeProvenceCode,jdbcType=VARCHAR}, #{nativeProvenceName,jdbcType=VARCHAR}, 
+      #{nativeCityCode,jdbcType=VARCHAR}, #{nativeCityName,jdbcType=VARCHAR}, #{nativeCountyCode,jdbcType=VARCHAR}, 
+      #{nativeCountyName,jdbcType=VARCHAR}, #{detailComplete,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, 
+      #{contractNo,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.cpx.agent.domain.FaAgent">
+    <!--@mbg.generated-->
+    insert into fa_agent
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="agentCode != null">
+        agent_code,
+      </if>
+      <if test="agentName != null">
+        agent_name,
+      </if>
+      <if test="recommendId != null">
+        recommend_id,
+      </if>
+      <if test="recommendCode != null">
+        recommend_code,
+      </if>
+      <if test="recommendName != null">
+        recommend_name,
+      </if>
+      <if test="practicingCertificateCode != null">
+        practicing_certificate_code,
+      </if>
+      <if test="practicingCertificateName != null">
+        practicing_certificate_name,
+      </if>
+      <if test="practicingCertificateDate != null">
+        practicing_certificate_date,
+      </if>
+      <if test="phone != null">
+        phone,
+      </if>
+      <if test="nationality != null">
+        nationality,
+      </if>
+      <if test="nationalityChi != null">
+        nationality_chi,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="birthday != null">
+        birthday,
+      </if>
+      <if test="maritalState != null">
+        marital_state,
+      </if>
+      <if test="maritalStateChi != null">
+        marital_state_chi,
+      </if>
+      <if test="politicalOutlook != null">
+        political_outlook,
+      </if>
+      <if test="politicalOutlookChi != null">
+        political_outlook_chi,
+      </if>
+      <if test="nation != null">
+        nation,
+      </if>
+      <if test="nationChi != null">
+        nation_chi,
+      </if>
+      <if test="bloodType != null">
+        blood_type,
+      </if>
+      <if test="bloodTypeChi != null">
+        blood_type_chi,
+      </if>
+      <if test="nativePlace != null">
+        native_place,
+      </if>
+      <if test="registeredResidence != null">
+        registered_residence,
+      </if>
+      <if test="address != null">
+        address,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="highestEducation != null">
+        highest_education,
+      </if>
+      <if test="highestEducationChi != null">
+        highest_education_chi,
+      </if>
+      <if test="annualIncomeRange != null">
+        annual_income_range,
+      </if>
+      <if test="identType != null">
+        ident_type,
+      </if>
+      <if test="identTypeChi != null">
+        ident_type_chi,
+      </if>
+      <if test="identNo != null">
+        ident_no,
+      </if>
+      <if test="certStartDate != null">
+        cert_start_date,
+      </if>
+      <if test="certExpiryDate != null">
+        cert_expiry_date,
+      </if>
+      <if test="branchId != null">
+        branch_id,
+      </if>
+      <if test="branchOfficeCode != null">
+        branch_office_code,
+      </if>
+      <if test="branchOfficeName != null">
+        branch_office_name,
+      </if>
+      <if test="teamCode != null">
+        team_code,
+      </if>
+      <if test="teamName != null">
+        team_name,
+      </if>
+      <if test="workplace != null">
+        workplace,
+      </if>
+      <if test="agentState != null">
+        agent_state,
+      </if>
+      <if test="aptitudeState != null">
+        aptitude_state,
+      </if>
+      <if test="aptitudeResule != null">
+        aptitude_resule,
+      </if>
+      <if test="interviewState != null">
+        interview_state,
+      </if>
+      <if test="interviewResults != null">
+        interview_results,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+      <if test="temporaryStorage != null">
+        temporary_storage,
+      </if>
+      <if test="relativesStayOurCompany != null">
+        relatives_stay_our_company,
+      </if>
+      <if test="sameExperienceIndustry != null">
+        same_experience_industry,
+      </if>
+      <if test="signContractConcurrentPost != null">
+        sign_contract_concurrent_post,
+      </if>
+      <if test="currentJobStation != null">
+        current_job_station,
+      </if>
+      <if test="urgentName != null">
+        urgent_name,
+      </if>
+      <if test="urgentPhone != null">
+        urgent_phone,
+      </if>
+      <if test="positionType != null">
+        position_type,
+      </if>
+      <if test="positionTypeChi != null">
+        position_type_chi,
+      </if>
+      <if test="cardFrontUrl != null">
+        card_front_url,
+      </if>
+      <if test="cardReverseUrl != null">
+        card_reverse_url,
+      </if>
+      <if test="personalpicUrl != null">
+        personalPic_url,
+      </if>
+      <if test="educationUrl != null">
+        education_url,
+      </if>
+      <if test="educationCertificationReportUrl != null">
+        education_certification_report_url,
+      </if>
+      <if test="incomeCertificate != null">
+        income_certificate,
+      </if>
+      <if test="delFlag != null">
+        del_flag,
+      </if>
+      <if test="operator != null">
+        `operator`,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="modifyDate != null">
+        modify_date,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+      <if test="awards != null">
+        awards,
+      </if>
+      <if test="specialties != null">
+        specialties,
+      </if>
+      <if test="hobbies != null">
+        hobbies,
+      </if>
+      <if test="certValidityType != null">
+        cert_validity_type,
+      </if>
+      <if test="certValidityTypeChi != null">
+        cert_validity_type_chi,
+      </if>
+      <if test="personalPicUrl != null">
+        personal_pic_url,
+      </if>
+      <if test="agentGrade != null">
+        agent_grade,
+      </if>
+      <if test="agentGradeChi != null">
+        agent_grade_chi,
+      </if>
+      <if test="signContractStatus != null">
+        sign_contract_status,
+      </if>
+      <if test="signContractProcess != null">
+        sign_contract_process,
+      </if>
+      <if test="signingState != null">
+        signing_state,
+      </if>
+      <if test="excellentAgentIntroduced != null">
+        excellent_agent_introduced,
+      </if>
+      <if test="addrProvenceCode != null">
+        addr_provence_code,
+      </if>
+      <if test="addrProvenceName != null">
+        addr_provence_name,
+      </if>
+      <if test="addrCityCode != null">
+        addr_city_code,
+      </if>
+      <if test="addrCityName != null">
+        addr_city_name,
+      </if>
+      <if test="addrCountyCode != null">
+        addr_county_code,
+      </if>
+      <if test="addrCountyName != null">
+        addr_county_name,
+      </if>
+      <if test="regProvenceCode != null">
+        reg_provence_code,
+      </if>
+      <if test="regProvenceName != null">
+        reg_provence_name,
+      </if>
+      <if test="regCityCode != null">
+        reg_city_code,
+      </if>
+      <if test="regCityName != null">
+        reg_city_name,
+      </if>
+      <if test="regCountyCode != null">
+        reg_county_code,
+      </if>
+      <if test="regCountyName != null">
+        reg_county_name,
+      </if>
+      <if test="nativeProvenceCode != null">
+        native_provence_code,
+      </if>
+      <if test="nativeProvenceName != null">
+        native_provence_name,
+      </if>
+      <if test="nativeCityCode != null">
+        native_city_code,
+      </if>
+      <if test="nativeCityName != null">
+        native_city_name,
+      </if>
+      <if test="nativeCountyCode != null">
+        native_county_code,
+      </if>
+      <if test="nativeCountyName != null">
+        native_county_name,
+      </if>
+      <if test="detailComplete != null">
+        detail_complete,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="contractNo != null">
+        contract_no,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="agentCode != null">
+        #{agentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="agentName != null">
+        #{agentName,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendId != null">
+        #{recommendId,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendCode != null">
+        #{recommendCode,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendName != null">
+        #{recommendName,jdbcType=VARCHAR},
+      </if>
+      <if test="practicingCertificateCode != null">
+        #{practicingCertificateCode,jdbcType=VARCHAR},
+      </if>
+      <if test="practicingCertificateName != null">
+        #{practicingCertificateName,jdbcType=VARCHAR},
+      </if>
+      <if test="practicingCertificateDate != null">
+        #{practicingCertificateDate,jdbcType=DATE},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="nationality != null">
+        #{nationality,jdbcType=VARCHAR},
+      </if>
+      <if test="nationalityChi != null">
+        #{nationalityChi,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=DATE},
+      </if>
+      <if test="maritalState != null">
+        #{maritalState,jdbcType=VARCHAR},
+      </if>
+      <if test="maritalStateChi != null">
+        #{maritalStateChi,jdbcType=VARCHAR},
+      </if>
+      <if test="politicalOutlook != null">
+        #{politicalOutlook,jdbcType=VARCHAR},
+      </if>
+      <if test="politicalOutlookChi != null">
+        #{politicalOutlookChi,jdbcType=VARCHAR},
+      </if>
+      <if test="nation != null">
+        #{nation,jdbcType=VARCHAR},
+      </if>
+      <if test="nationChi != null">
+        #{nationChi,jdbcType=VARCHAR},
+      </if>
+      <if test="bloodType != null">
+        #{bloodType,jdbcType=VARCHAR},
+      </if>
+      <if test="bloodTypeChi != null">
+        #{bloodTypeChi,jdbcType=VARCHAR},
+      </if>
+      <if test="nativePlace != null">
+        #{nativePlace,jdbcType=VARCHAR},
+      </if>
+      <if test="registeredResidence != null">
+        #{registeredResidence,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="highestEducation != null">
+        #{highestEducation,jdbcType=VARCHAR},
+      </if>
+      <if test="highestEducationChi != null">
+        #{highestEducationChi,jdbcType=VARCHAR},
+      </if>
+      <if test="annualIncomeRange != null">
+        #{annualIncomeRange,jdbcType=VARCHAR},
+      </if>
+      <if test="identType != null">
+        #{identType,jdbcType=VARCHAR},
+      </if>
+      <if test="identTypeChi != null">
+        #{identTypeChi,jdbcType=VARCHAR},
+      </if>
+      <if test="identNo != null">
+        #{identNo,jdbcType=VARCHAR},
+      </if>
+      <if test="certStartDate != null">
+        #{certStartDate,jdbcType=DATE},
+      </if>
+      <if test="certExpiryDate != null">
+        #{certExpiryDate,jdbcType=DATE},
+      </if>
+      <if test="branchId != null">
+        #{branchId,jdbcType=VARCHAR},
+      </if>
+      <if test="branchOfficeCode != null">
+        #{branchOfficeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="branchOfficeName != null">
+        #{branchOfficeName,jdbcType=VARCHAR},
+      </if>
+      <if test="teamCode != null">
+        #{teamCode,jdbcType=VARCHAR},
+      </if>
+      <if test="teamName != null">
+        #{teamName,jdbcType=VARCHAR},
+      </if>
+      <if test="workplace != null">
+        #{workplace,jdbcType=VARCHAR},
+      </if>
+      <if test="agentState != null">
+        #{agentState,jdbcType=VARCHAR},
+      </if>
+      <if test="aptitudeState != null">
+        #{aptitudeState,jdbcType=VARCHAR},
+      </if>
+      <if test="aptitudeResule != null">
+        #{aptitudeResule,jdbcType=VARCHAR},
+      </if>
+      <if test="interviewState != null">
+        #{interviewState,jdbcType=VARCHAR},
+      </if>
+      <if test="interviewResults != null">
+        #{interviewResults,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=DATE},
+      </if>
+      <if test="temporaryStorage != null">
+        #{temporaryStorage,jdbcType=VARCHAR},
+      </if>
+      <if test="relativesStayOurCompany != null">
+        #{relativesStayOurCompany,jdbcType=VARCHAR},
+      </if>
+      <if test="sameExperienceIndustry != null">
+        #{sameExperienceIndustry,jdbcType=VARCHAR},
+      </if>
+      <if test="signContractConcurrentPost != null">
+        #{signContractConcurrentPost,jdbcType=VARCHAR},
+      </if>
+      <if test="currentJobStation != null">
+        #{currentJobStation,jdbcType=VARCHAR},
+      </if>
+      <if test="urgentName != null">
+        #{urgentName,jdbcType=VARCHAR},
+      </if>
+      <if test="urgentPhone != null">
+        #{urgentPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="positionType != null">
+        #{positionType,jdbcType=VARCHAR},
+      </if>
+      <if test="positionTypeChi != null">
+        #{positionTypeChi,jdbcType=VARCHAR},
+      </if>
+      <if test="cardFrontUrl != null">
+        #{cardFrontUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="cardReverseUrl != null">
+        #{cardReverseUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="personalpicUrl != null">
+        #{personalpicUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="educationUrl != null">
+        #{educationUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="educationCertificationReportUrl != null">
+        #{educationCertificationReportUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="incomeCertificate != null">
+        #{incomeCertificate,jdbcType=VARCHAR},
+      </if>
+      <if test="delFlag != null">
+        #{delFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="operator != null">
+        #{operator,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyDate != null">
+        #{modifyDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="awards != null">
+        #{awards,jdbcType=VARCHAR},
+      </if>
+      <if test="specialties != null">
+        #{specialties,jdbcType=VARCHAR},
+      </if>
+      <if test="hobbies != null">
+        #{hobbies,jdbcType=VARCHAR},
+      </if>
+      <if test="certValidityType != null">
+        #{certValidityType,jdbcType=VARCHAR},
+      </if>
+      <if test="certValidityTypeChi != null">
+        #{certValidityTypeChi,jdbcType=VARCHAR},
+      </if>
+      <if test="personalPicUrl != null">
+        #{personalPicUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="agentGrade != null">
+        #{agentGrade,jdbcType=VARCHAR},
+      </if>
+      <if test="agentGradeChi != null">
+        #{agentGradeChi,jdbcType=VARCHAR},
+      </if>
+      <if test="signContractStatus != null">
+        #{signContractStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="signContractProcess != null">
+        #{signContractProcess,jdbcType=VARCHAR},
+      </if>
+      <if test="signingState != null">
+        #{signingState,jdbcType=VARCHAR},
+      </if>
+      <if test="excellentAgentIntroduced != null">
+        #{excellentAgentIntroduced,jdbcType=VARCHAR},
+      </if>
+      <if test="addrProvenceCode != null">
+        #{addrProvenceCode,jdbcType=VARCHAR},
+      </if>
+      <if test="addrProvenceName != null">
+        #{addrProvenceName,jdbcType=VARCHAR},
+      </if>
+      <if test="addrCityCode != null">
+        #{addrCityCode,jdbcType=VARCHAR},
+      </if>
+      <if test="addrCityName != null">
+        #{addrCityName,jdbcType=VARCHAR},
+      </if>
+      <if test="addrCountyCode != null">
+        #{addrCountyCode,jdbcType=VARCHAR},
+      </if>
+      <if test="addrCountyName != null">
+        #{addrCountyName,jdbcType=VARCHAR},
+      </if>
+      <if test="regProvenceCode != null">
+        #{regProvenceCode,jdbcType=VARCHAR},
+      </if>
+      <if test="regProvenceName != null">
+        #{regProvenceName,jdbcType=VARCHAR},
+      </if>
+      <if test="regCityCode != null">
+        #{regCityCode,jdbcType=VARCHAR},
+      </if>
+      <if test="regCityName != null">
+        #{regCityName,jdbcType=VARCHAR},
+      </if>
+      <if test="regCountyCode != null">
+        #{regCountyCode,jdbcType=VARCHAR},
+      </if>
+      <if test="regCountyName != null">
+        #{regCountyName,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeProvenceCode != null">
+        #{nativeProvenceCode,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeProvenceName != null">
+        #{nativeProvenceName,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeCityCode != null">
+        #{nativeCityCode,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeCityName != null">
+        #{nativeCityName,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeCountyCode != null">
+        #{nativeCountyCode,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeCountyName != null">
+        #{nativeCountyName,jdbcType=VARCHAR},
+      </if>
+      <if test="detailComplete != null">
+        #{detailComplete,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="contractNo != null">
+        #{contractNo,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cpx.agent.domain.FaAgent">
+    <!--@mbg.generated-->
+    update fa_agent
+    <set>
+      <if test="agentCode != null">
+        agent_code = #{agentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="agentName != null">
+        agent_name = #{agentName,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendId != null">
+        recommend_id = #{recommendId,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendCode != null">
+        recommend_code = #{recommendCode,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendName != null">
+        recommend_name = #{recommendName,jdbcType=VARCHAR},
+      </if>
+      <if test="practicingCertificateCode != null">
+        practicing_certificate_code = #{practicingCertificateCode,jdbcType=VARCHAR},
+      </if>
+      <if test="practicingCertificateName != null">
+        practicing_certificate_name = #{practicingCertificateName,jdbcType=VARCHAR},
+      </if>
+      <if test="practicingCertificateDate != null">
+        practicing_certificate_date = #{practicingCertificateDate,jdbcType=DATE},
+      </if>
+      <if test="phone != null">
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="nationality != null">
+        nationality = #{nationality,jdbcType=VARCHAR},
+      </if>
+      <if test="nationalityChi != null">
+        nationality_chi = #{nationalityChi,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        birthday = #{birthday,jdbcType=DATE},
+      </if>
+      <if test="maritalState != null">
+        marital_state = #{maritalState,jdbcType=VARCHAR},
+      </if>
+      <if test="maritalStateChi != null">
+        marital_state_chi = #{maritalStateChi,jdbcType=VARCHAR},
+      </if>
+      <if test="politicalOutlook != null">
+        political_outlook = #{politicalOutlook,jdbcType=VARCHAR},
+      </if>
+      <if test="politicalOutlookChi != null">
+        political_outlook_chi = #{politicalOutlookChi,jdbcType=VARCHAR},
+      </if>
+      <if test="nation != null">
+        nation = #{nation,jdbcType=VARCHAR},
+      </if>
+      <if test="nationChi != null">
+        nation_chi = #{nationChi,jdbcType=VARCHAR},
+      </if>
+      <if test="bloodType != null">
+        blood_type = #{bloodType,jdbcType=VARCHAR},
+      </if>
+      <if test="bloodTypeChi != null">
+        blood_type_chi = #{bloodTypeChi,jdbcType=VARCHAR},
+      </if>
+      <if test="nativePlace != null">
+        native_place = #{nativePlace,jdbcType=VARCHAR},
+      </if>
+      <if test="registeredResidence != null">
+        registered_residence = #{registeredResidence,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="highestEducation != null">
+        highest_education = #{highestEducation,jdbcType=VARCHAR},
+      </if>
+      <if test="highestEducationChi != null">
+        highest_education_chi = #{highestEducationChi,jdbcType=VARCHAR},
+      </if>
+      <if test="annualIncomeRange != null">
+        annual_income_range = #{annualIncomeRange,jdbcType=VARCHAR},
+      </if>
+      <if test="identType != null">
+        ident_type = #{identType,jdbcType=VARCHAR},
+      </if>
+      <if test="identTypeChi != null">
+        ident_type_chi = #{identTypeChi,jdbcType=VARCHAR},
+      </if>
+      <if test="identNo != null">
+        ident_no = #{identNo,jdbcType=VARCHAR},
+      </if>
+      <if test="certStartDate != null">
+        cert_start_date = #{certStartDate,jdbcType=DATE},
+      </if>
+      <if test="certExpiryDate != null">
+        cert_expiry_date = #{certExpiryDate,jdbcType=DATE},
+      </if>
+      <if test="branchId != null">
+        branch_id = #{branchId,jdbcType=VARCHAR},
+      </if>
+      <if test="branchOfficeCode != null">
+        branch_office_code = #{branchOfficeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="branchOfficeName != null">
+        branch_office_name = #{branchOfficeName,jdbcType=VARCHAR},
+      </if>
+      <if test="teamCode != null">
+        team_code = #{teamCode,jdbcType=VARCHAR},
+      </if>
+      <if test="teamName != null">
+        team_name = #{teamName,jdbcType=VARCHAR},
+      </if>
+      <if test="workplace != null">
+        workplace = #{workplace,jdbcType=VARCHAR},
+      </if>
+      <if test="agentState != null">
+        agent_state = #{agentState,jdbcType=VARCHAR},
+      </if>
+      <if test="aptitudeState != null">
+        aptitude_state = #{aptitudeState,jdbcType=VARCHAR},
+      </if>
+      <if test="aptitudeResule != null">
+        aptitude_resule = #{aptitudeResule,jdbcType=VARCHAR},
+      </if>
+      <if test="interviewState != null">
+        interview_state = #{interviewState,jdbcType=VARCHAR},
+      </if>
+      <if test="interviewResults != null">
+        interview_results = #{interviewResults,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=DATE},
+      </if>
+      <if test="temporaryStorage != null">
+        temporary_storage = #{temporaryStorage,jdbcType=VARCHAR},
+      </if>
+      <if test="relativesStayOurCompany != null">
+        relatives_stay_our_company = #{relativesStayOurCompany,jdbcType=VARCHAR},
+      </if>
+      <if test="sameExperienceIndustry != null">
+        same_experience_industry = #{sameExperienceIndustry,jdbcType=VARCHAR},
+      </if>
+      <if test="signContractConcurrentPost != null">
+        sign_contract_concurrent_post = #{signContractConcurrentPost,jdbcType=VARCHAR},
+      </if>
+      <if test="currentJobStation != null">
+        current_job_station = #{currentJobStation,jdbcType=VARCHAR},
+      </if>
+      <if test="urgentName != null">
+        urgent_name = #{urgentName,jdbcType=VARCHAR},
+      </if>
+      <if test="urgentPhone != null">
+        urgent_phone = #{urgentPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="positionType != null">
+        position_type = #{positionType,jdbcType=VARCHAR},
+      </if>
+      <if test="positionTypeChi != null">
+        position_type_chi = #{positionTypeChi,jdbcType=VARCHAR},
+      </if>
+      <if test="cardFrontUrl != null">
+        card_front_url = #{cardFrontUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="cardReverseUrl != null">
+        card_reverse_url = #{cardReverseUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="personalpicUrl != null">
+        personalPic_url = #{personalpicUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="educationUrl != null">
+        education_url = #{educationUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="educationCertificationReportUrl != null">
+        education_certification_report_url = #{educationCertificationReportUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="incomeCertificate != null">
+        income_certificate = #{incomeCertificate,jdbcType=VARCHAR},
+      </if>
+      <if test="delFlag != null">
+        del_flag = #{delFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="operator != null">
+        `operator` = #{operator,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyDate != null">
+        modify_date = #{modifyDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="awards != null">
+        awards = #{awards,jdbcType=VARCHAR},
+      </if>
+      <if test="specialties != null">
+        specialties = #{specialties,jdbcType=VARCHAR},
+      </if>
+      <if test="hobbies != null">
+        hobbies = #{hobbies,jdbcType=VARCHAR},
+      </if>
+      <if test="certValidityType != null">
+        cert_validity_type = #{certValidityType,jdbcType=VARCHAR},
+      </if>
+      <if test="certValidityTypeChi != null">
+        cert_validity_type_chi = #{certValidityTypeChi,jdbcType=VARCHAR},
+      </if>
+      <if test="personalPicUrl != null">
+        personal_pic_url = #{personalPicUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="agentGrade != null">
+        agent_grade = #{agentGrade,jdbcType=VARCHAR},
+      </if>
+      <if test="agentGradeChi != null">
+        agent_grade_chi = #{agentGradeChi,jdbcType=VARCHAR},
+      </if>
+      <if test="signContractStatus != null">
+        sign_contract_status = #{signContractStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="signContractProcess != null">
+        sign_contract_process = #{signContractProcess,jdbcType=VARCHAR},
+      </if>
+      <if test="signingState != null">
+        signing_state = #{signingState,jdbcType=VARCHAR},
+      </if>
+      <if test="excellentAgentIntroduced != null">
+        excellent_agent_introduced = #{excellentAgentIntroduced,jdbcType=VARCHAR},
+      </if>
+      <if test="addrProvenceCode != null">
+        addr_provence_code = #{addrProvenceCode,jdbcType=VARCHAR},
+      </if>
+      <if test="addrProvenceName != null">
+        addr_provence_name = #{addrProvenceName,jdbcType=VARCHAR},
+      </if>
+      <if test="addrCityCode != null">
+        addr_city_code = #{addrCityCode,jdbcType=VARCHAR},
+      </if>
+      <if test="addrCityName != null">
+        addr_city_name = #{addrCityName,jdbcType=VARCHAR},
+      </if>
+      <if test="addrCountyCode != null">
+        addr_county_code = #{addrCountyCode,jdbcType=VARCHAR},
+      </if>
+      <if test="addrCountyName != null">
+        addr_county_name = #{addrCountyName,jdbcType=VARCHAR},
+      </if>
+      <if test="regProvenceCode != null">
+        reg_provence_code = #{regProvenceCode,jdbcType=VARCHAR},
+      </if>
+      <if test="regProvenceName != null">
+        reg_provence_name = #{regProvenceName,jdbcType=VARCHAR},
+      </if>
+      <if test="regCityCode != null">
+        reg_city_code = #{regCityCode,jdbcType=VARCHAR},
+      </if>
+      <if test="regCityName != null">
+        reg_city_name = #{regCityName,jdbcType=VARCHAR},
+      </if>
+      <if test="regCountyCode != null">
+        reg_county_code = #{regCountyCode,jdbcType=VARCHAR},
+      </if>
+      <if test="regCountyName != null">
+        reg_county_name = #{regCountyName,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeProvenceCode != null">
+        native_provence_code = #{nativeProvenceCode,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeProvenceName != null">
+        native_provence_name = #{nativeProvenceName,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeCityCode != null">
+        native_city_code = #{nativeCityCode,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeCityName != null">
+        native_city_name = #{nativeCityName,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeCountyCode != null">
+        native_county_code = #{nativeCountyCode,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeCountyName != null">
+        native_county_name = #{nativeCountyName,jdbcType=VARCHAR},
+      </if>
+      <if test="detailComplete != null">
+        detail_complete = #{detailComplete,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="contractNo != null">
+        contract_no = #{contractNo,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cpx.agent.domain.FaAgent">
+    <!--@mbg.generated-->
+    update fa_agent
+    set agent_code = #{agentCode,jdbcType=VARCHAR},
+      agent_name = #{agentName,jdbcType=VARCHAR},
+      recommend_id = #{recommendId,jdbcType=VARCHAR},
+      recommend_code = #{recommendCode,jdbcType=VARCHAR},
+      recommend_name = #{recommendName,jdbcType=VARCHAR},
+      practicing_certificate_code = #{practicingCertificateCode,jdbcType=VARCHAR},
+      practicing_certificate_name = #{practicingCertificateName,jdbcType=VARCHAR},
+      practicing_certificate_date = #{practicingCertificateDate,jdbcType=DATE},
+      phone = #{phone,jdbcType=VARCHAR},
+      nationality = #{nationality,jdbcType=VARCHAR},
+      nationality_chi = #{nationalityChi,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=DATE},
+      marital_state = #{maritalState,jdbcType=VARCHAR},
+      marital_state_chi = #{maritalStateChi,jdbcType=VARCHAR},
+      political_outlook = #{politicalOutlook,jdbcType=VARCHAR},
+      political_outlook_chi = #{politicalOutlookChi,jdbcType=VARCHAR},
+      nation = #{nation,jdbcType=VARCHAR},
+      nation_chi = #{nationChi,jdbcType=VARCHAR},
+      blood_type = #{bloodType,jdbcType=VARCHAR},
+      blood_type_chi = #{bloodTypeChi,jdbcType=VARCHAR},
+      native_place = #{nativePlace,jdbcType=VARCHAR},
+      registered_residence = #{registeredResidence,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      highest_education = #{highestEducation,jdbcType=VARCHAR},
+      highest_education_chi = #{highestEducationChi,jdbcType=VARCHAR},
+      annual_income_range = #{annualIncomeRange,jdbcType=VARCHAR},
+      ident_type = #{identType,jdbcType=VARCHAR},
+      ident_type_chi = #{identTypeChi,jdbcType=VARCHAR},
+      ident_no = #{identNo,jdbcType=VARCHAR},
+      cert_start_date = #{certStartDate,jdbcType=DATE},
+      cert_expiry_date = #{certExpiryDate,jdbcType=DATE},
+      branch_id = #{branchId,jdbcType=VARCHAR},
+      branch_office_code = #{branchOfficeCode,jdbcType=VARCHAR},
+      branch_office_name = #{branchOfficeName,jdbcType=VARCHAR},
+      team_code = #{teamCode,jdbcType=VARCHAR},
+      team_name = #{teamName,jdbcType=VARCHAR},
+      workplace = #{workplace,jdbcType=VARCHAR},
+      agent_state = #{agentState,jdbcType=VARCHAR},
+      aptitude_state = #{aptitudeState,jdbcType=VARCHAR},
+      aptitude_resule = #{aptitudeResule,jdbcType=VARCHAR},
+      interview_state = #{interviewState,jdbcType=VARCHAR},
+      interview_results = #{interviewResults,jdbcType=VARCHAR},
+      update_date = #{updateDate,jdbcType=DATE},
+      temporary_storage = #{temporaryStorage,jdbcType=VARCHAR},
+      relatives_stay_our_company = #{relativesStayOurCompany,jdbcType=VARCHAR},
+      same_experience_industry = #{sameExperienceIndustry,jdbcType=VARCHAR},
+      sign_contract_concurrent_post = #{signContractConcurrentPost,jdbcType=VARCHAR},
+      current_job_station = #{currentJobStation,jdbcType=VARCHAR},
+      urgent_name = #{urgentName,jdbcType=VARCHAR},
+      urgent_phone = #{urgentPhone,jdbcType=VARCHAR},
+      position_type = #{positionType,jdbcType=VARCHAR},
+      position_type_chi = #{positionTypeChi,jdbcType=VARCHAR},
+      card_front_url = #{cardFrontUrl,jdbcType=VARCHAR},
+      card_reverse_url = #{cardReverseUrl,jdbcType=VARCHAR},
+      personalPic_url = #{personalpicUrl,jdbcType=VARCHAR},
+      education_url = #{educationUrl,jdbcType=VARCHAR},
+      education_certification_report_url = #{educationCertificationReportUrl,jdbcType=VARCHAR},
+      income_certificate = #{incomeCertificate,jdbcType=VARCHAR},
+      del_flag = #{delFlag,jdbcType=VARCHAR},
+      `operator` = #{operator,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      modify_date = #{modifyDate,jdbcType=TIMESTAMP},
+      remark = #{remark,jdbcType=VARCHAR},
+      awards = #{awards,jdbcType=VARCHAR},
+      specialties = #{specialties,jdbcType=VARCHAR},
+      hobbies = #{hobbies,jdbcType=VARCHAR},
+      cert_validity_type = #{certValidityType,jdbcType=VARCHAR},
+      cert_validity_type_chi = #{certValidityTypeChi,jdbcType=VARCHAR},
+      personal_pic_url = #{personalPicUrl,jdbcType=VARCHAR},
+      agent_grade = #{agentGrade,jdbcType=VARCHAR},
+      agent_grade_chi = #{agentGradeChi,jdbcType=VARCHAR},
+      sign_contract_status = #{signContractStatus,jdbcType=VARCHAR},
+      sign_contract_process = #{signContractProcess,jdbcType=VARCHAR},
+      signing_state = #{signingState,jdbcType=VARCHAR},
+      excellent_agent_introduced = #{excellentAgentIntroduced,jdbcType=VARCHAR},
+      addr_provence_code = #{addrProvenceCode,jdbcType=VARCHAR},
+      addr_provence_name = #{addrProvenceName,jdbcType=VARCHAR},
+      addr_city_code = #{addrCityCode,jdbcType=VARCHAR},
+      addr_city_name = #{addrCityName,jdbcType=VARCHAR},
+      addr_county_code = #{addrCountyCode,jdbcType=VARCHAR},
+      addr_county_name = #{addrCountyName,jdbcType=VARCHAR},
+      reg_provence_code = #{regProvenceCode,jdbcType=VARCHAR},
+      reg_provence_name = #{regProvenceName,jdbcType=VARCHAR},
+      reg_city_code = #{regCityCode,jdbcType=VARCHAR},
+      reg_city_name = #{regCityName,jdbcType=VARCHAR},
+      reg_county_code = #{regCountyCode,jdbcType=VARCHAR},
+      reg_county_name = #{regCountyName,jdbcType=VARCHAR},
+      native_provence_code = #{nativeProvenceCode,jdbcType=VARCHAR},
+      native_provence_name = #{nativeProvenceName,jdbcType=VARCHAR},
+      native_city_code = #{nativeCityCode,jdbcType=VARCHAR},
+      native_city_name = #{nativeCityName,jdbcType=VARCHAR},
+      native_county_code = #{nativeCountyCode,jdbcType=VARCHAR},
+      native_county_name = #{nativeCountyName,jdbcType=VARCHAR},
+      detail_complete = #{detailComplete,jdbcType=VARCHAR},
+      user_id = #{userId,jdbcType=VARCHAR},
+      contract_no = #{contractNo,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>
