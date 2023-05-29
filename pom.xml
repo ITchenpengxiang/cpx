@@ -21,6 +21,7 @@
         <module>cpx-base</module>
         <module>cpx-interface</module>
         <module>cpx-gateway</module>
+        <module>cpx-common</module>
     </modules>
 
 

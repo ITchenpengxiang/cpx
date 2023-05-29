@@ -28,7 +28,7 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
         //2.获取路径
         String path = request.getURI().getPath();
         //放行登录路径
-        if (path.equals("/login/in")) {
+        if ("/login/in".equals(path) || "/login/out".equals(path)) {
             return chain.filter(exchange);
         }
 

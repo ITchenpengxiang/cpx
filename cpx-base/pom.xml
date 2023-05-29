@@ -12,11 +12,14 @@
 	<groupId>com.cpx.base</groupId>
 	<artifactId>cpx-base</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>cpx-base</name>
+	<modules>
+		<module>cpx-base-excel</module>
+	</modules>
 
 
-
-<dependencies>
+	<dependencies>
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-web</artifactId>
@@ -26,6 +29,12 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-test</artifactId>
 	</dependency>
+		<!--导入工具类-->
+		<dependency>
+			<groupId>com.cpx.base</groupId>
+			<artifactId>cpx-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 </dependencies>
 

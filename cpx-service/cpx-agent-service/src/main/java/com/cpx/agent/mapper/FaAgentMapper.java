@@ -4,6 +4,10 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.cpx.agent.domain.FaAgent;
 import org.apache.ibatis.annotations.Mapper;
 
+/**
+ * 代理人信息表
+ * @author chenpengxiang
+ */
 @Mapper
 public interface FaAgentMapper extends BaseMapper<FaAgent> {
     /**
