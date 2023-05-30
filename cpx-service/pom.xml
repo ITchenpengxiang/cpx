@@ -40,6 +40,7 @@
               <artifactId>spring-boot-starter-test</artifactId>
               <scope>test</scope>
           </dependency>
+
         <!--nacos注册中心和配置中心-->
           <dependency>
               <groupId>com.alibaba.cloud</groupId>
@@ -49,6 +50,7 @@
               <groupId>com.alibaba.cloud</groupId>
               <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
           </dependency>
+
         <!--fegin接口-->
         <dependency>
                 <groupId>com.cpx</groupId>
@@ -56,26 +58,32 @@
                 <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!--工具类-->
+        <dependency>
+            <groupId>com.cpx.base</groupId>
+            <artifactId>cpx-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
-        <!--logback日志-->
-        <!-- 添加slf4j日志api -->
+   <!--     &lt;!&ndash;logback日志&ndash;&gt;
+        &lt;!&ndash; 添加slf4j日志api &ndash;&gt;
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.25</version>
         </dependency>
-        <!-- 添加logback-classic依赖 -->
+        &lt;!&ndash; 添加logback-classic依赖 &ndash;&gt;
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.2.3</version>
         </dependency>
-        <!-- 添加logback-core依赖 -->
+        &lt;!&ndash; 添加logback-core依赖 &ndash;&gt;
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
             <version>1.2.3</version>
-        </dependency>
+        </dependency>-->
 
         <!--MySQL-->
         <dependency>
