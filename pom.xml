@@ -64,8 +64,10 @@
         <kafka.version>2.6.6</kafka.version>
         <kafka.client.version>2.5.1</kafka.client.version>
         <reflections.version>0.9.11</reflections.version>
-        <swagger.version>2.9.2</swagger.version>
-        <knife4j.version>2.0.2</knife4j.version>
+        <!--<swagger.version>2.9.2</swagger.version>
+        <knife4j.version>2.0.2</knife4j.version>-->
+        <swagger.version>3.0.0</swagger.version>
+        <knife4j.version>3.0.3</knife4j.version>
         <com.alibaba.cloud>2.2.5.RELEASE</com.alibaba.cloud>
         <xxl.job.version>2.2.0-SNAPSHOT</xxl.job.version>
     </properties>

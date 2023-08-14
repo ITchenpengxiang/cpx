@@ -1,4 +1,4 @@
-package com.cpx.base.config;
+package com.cpx.thread.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -29,7 +29,7 @@ public class ThreadPoolConfig {
         pool.setKeepAliveSeconds(keepAliveTime);
         pool.setQueueCapacity(queueCapacity);
         // 直接在execute方法的调用线程中运行
-        pool.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
+        pool.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());//拒绝策略,由主线程去执行
         // 初始化
         pool.initialize();
         return pool;

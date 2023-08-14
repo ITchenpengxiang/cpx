@@ -1,6 +1,7 @@
-package com.cpx.base.controller;
+package com.cpx.thread.controller;
 
-import com.cpx.base.service.ThreadPoolAsynchronization;
+import com.cpx.thread.service.ThreadPoolAsynchronization;
+
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

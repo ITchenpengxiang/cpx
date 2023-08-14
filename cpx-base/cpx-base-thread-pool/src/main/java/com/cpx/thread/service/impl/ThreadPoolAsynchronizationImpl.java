@@ -1,6 +1,6 @@
-package com.cpx.base.service.impl;
+package com.cpx.thread.service.impl;
 
-import com.cpx.base.service.ThreadPoolAsynchronization;
+import com.cpx.thread.service.ThreadPoolAsynchronization;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;

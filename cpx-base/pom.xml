@@ -17,7 +17,8 @@
 	<modules>
 		<module>cpx-base-excel</module>
         <module>cpx-base-thread-pool</module>
-    </modules>
+		<module>cpx-base-dubbo</module>
+	</modules>
 
 
 	<dependencies>

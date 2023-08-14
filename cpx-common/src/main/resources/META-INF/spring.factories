@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.cpx.common.redis.RedisService,\
+com.cpx.common.swagger.Swagger2Configuration
+# com.heima.common.swagger.Swagger2Configuration,\
+#  com.heima.common.redis.CacheService,\
+#   com.heima.common.jackson.InitJacksonConfig
+#项目启动时，自动扫描包下的类
+#

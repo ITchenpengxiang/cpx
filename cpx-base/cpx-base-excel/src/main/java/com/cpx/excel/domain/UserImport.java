@@ -1,6 +1,6 @@
-package com.cpx.base.domain;
+package com.cpx.excel.domain;
 
-import com.cpx.base.utils.ExcelColumn;
+import com.cpx.excel.utils.ExcelColumn;
 import lombok.Data;
 
 import java.io.Serializable;

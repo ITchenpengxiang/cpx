@@ -7,6 +7,9 @@ import javax.annotation.Resource;
 import com.cpx.agent.mapper.FaAgentMapper;
 import com.cpx.agent.domain.FaAgent;
 import com.cpx.agent.service.FaAgentService;
+
+import java.util.List;
+
 @Service
 public class FaAgentServiceImpl extends ServiceImpl<FaAgentMapper,FaAgent> implements FaAgentService{
 
@@ -42,5 +45,6 @@ public class FaAgentServiceImpl extends ServiceImpl<FaAgentMapper,FaAgent> imple
     public int updateByPrimaryKey(FaAgent record) {
         return faAgentMapper.updateByPrimaryKey(record);
     }
+
 
 }

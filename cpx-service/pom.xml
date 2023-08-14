@@ -65,6 +65,13 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!--dubbo-->
+     <!--   <dependency>
+            <groupId>com.cpx.base</groupId>
+            <artifactId>cpx-base-dubbo</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>-->
+
    <!--     &lt;!&ndash;logback日志&ndash;&gt;
         &lt;!&ndash; 添加slf4j日志api &ndash;&gt;
         <dependency>
@@ -103,6 +110,9 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
+
+
+
 
     </dependencies>
 

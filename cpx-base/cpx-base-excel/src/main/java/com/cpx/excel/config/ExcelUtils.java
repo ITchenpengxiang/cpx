@@ -1,7 +1,7 @@
-package com.cpx.base.config;
+package com.cpx.excel.config;
 
 import com.alibaba.excel.EasyExcel;
-import com.cpx.base.utils.ExcelColumn;
+import com.cpx.excel.utils.ExcelColumn;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.BooleanUtils;
 import org.apache.commons.lang3.CharUtils;
