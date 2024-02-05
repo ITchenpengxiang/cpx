@@ -2,27 +2,39 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cpx-base" />
         <module name="cpx-agent-service" />
         <module name="cpx-interface" />
-        <module name="cpx-agent-gateway" />
         <module name="cpx-test-service" />
+        <module name="cpx-common" />
+        <module name="cpx-base-excel" />
+        <module name="cpx-base-thread-pool" />
+        <module name="cpx-agent-gateway" />
+        <module name="cpx-base-dubbo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cpx-base-kafka" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cpx-agent-gateway" options="-parameters" />
       <module name="cpx-agent-service" options="-parameters" />
       <module name="cpx-base" options="-parameters" />
-      <module name="cpx-gateway" options="" />
+      <module name="cpx-base-dubbo" options="-parameters" />
+      <module name="cpx-base-excel" options="-parameters" />
+      <module name="cpx-base-kafka" options="-parameters" />
+      <module name="cpx-base-thread-pool" options="-parameters" />
+      <module name="cpx-common" options="-parameters" />
+      <module name="cpx-gateway" options="-parameters" />
       <module name="cpx-interface" options="-parameters" />
-      <module name="cpx-parent" options="" />
-      <module name="cpx-service" options="" />
+      <module name="cpx-parent" options="-parameters" />
+      <module name="cpx-service" options="-parameters" />
       <module name="cpx-test-service" options="-parameters" />
     </option>
   </component>

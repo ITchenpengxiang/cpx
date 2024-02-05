@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/cpx-base/cpx-base-dubbo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-base/cpx-base-excel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-base/cpx-base-kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-base/cpx-base-thread-pool/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cpx-base/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cpx-base/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cpx-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cpx-gateway/cpx-agent-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cpx-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cpx-gateway/src/main/resources" charset="UTF-8" />
