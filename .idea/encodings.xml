@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/cpx-base/cpx-base-china-encrypt/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cpx-base/cpx-base-dubbo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cpx-base/cpx-base-excel/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cpx-base/cpx-base-kafka/src/main/java" charset="UTF-8" />

@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cpx.encrypt.mapper.ShopMapper">
+  <resultMap id="BaseResultMap" type="com.cpx.encrypt.domain.Shop">
+    <!--@mbg.generated-->
+    <!--@Table shop-->
+    <id column="shop_no" jdbcType="VARCHAR" property="shopNo" />
+    <result column="loc_id" jdbcType="INTEGER" property="locId" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="management_type" jdbcType="VARCHAR" property="managementType" />
+    <result column="channel_id" jdbcType="INTEGER" property="channelId" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="sale_game" jdbcType="VARCHAR" property="saleGame" />
+    <result column="user_Id" jdbcType="INTEGER" property="userId" />
+    <result column="sale_proxy_user_id" jdbcType="INTEGER" property="saleProxyUserId" />
+    <result column="shop_status" jdbcType="INTEGER" property="shopStatus" />
+    <result column="rent_type" jdbcType="VARCHAR" property="rentType" />
+    <result column="house_rent" jdbcType="DECIMAL" property="houseRent" />
+    <result column="shop_area" jdbcType="DECIMAL" property="shopArea" />
+    <result column="deposit" jdbcType="VARCHAR" property="deposit" />
+    <result column="dc_sale_rate" jdbcType="DECIMAL" property="dcSaleRate" />
+    <result column="jk_sale_rate" jdbcType="DECIMAL" property="jkSaleRate" />
+    <result column="shop_lvl" jdbcType="VARCHAR" property="shopLvl" />
+    <result column="house_type" jdbcType="VARCHAR" property="houseType" />
+    <result column="loc_type" jdbcType="VARCHAR" property="locType" />
+    <result column="account_period_status" jdbcType="INTEGER" property="accountPeriodStatus" />
+    <result column="sign_up_type" jdbcType="VARCHAR" property="signUpType" />
+    <result column="sign_up_date" jdbcType="DATE" property="signUpDate" />
+    <result column="get_info_type" jdbcType="VARCHAR" property="getInfoType" />
+    <result column="if_err_delete" jdbcType="INTEGER" property="ifErrDelete" />
+    <result column="shop_front_img" jdbcType="VARCHAR" property="shopFrontImg" />
+    <result column="shop_inside_img" jdbcType="VARCHAR" property="shopInsideImg" />
+    <result column="shop_inside_sale_img" jdbcType="VARCHAR" property="shopInsideSaleImg" />
+    <result column="application_front_img" jdbcType="VARCHAR" property="applicationFrontImg" />
+    <result column="application_img" jdbcType="VARCHAR" property="applicationImg" />
+    <result column="house_contract_img" jdbcType="VARCHAR" property="houseContractImg" />
+    <result column="real_name_img" jdbcType="VARCHAR" property="realNameImg" />
+    <result column="shop_dot_img" jdbcType="VARCHAR" property="shopDotImg" />
+    <result column="finance_type" jdbcType="VARCHAR" property="financeType" />
+    <result column="comm_bank_no" jdbcType="VARCHAR" property="commBankNo" />
+    <result column="comm_bank_name" jdbcType="VARCHAR" property="commBankName" />
+    <result column="comm_bank_owner" jdbcType="VARCHAR" property="commBankOwner" />
+    <result column="comm_bank_no_img" jdbcType="VARCHAR" property="commBankNoImg" />
+    <result column="create_user_id" jdbcType="INTEGER" property="createUserId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="last_update_user" jdbcType="INTEGER" property="lastUpdateUser" />
+    <result column="last_update_time" jdbcType="TIMESTAMP" property="lastUpdateTime" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="jc_sale_rate" jdbcType="DECIMAL" property="jcSaleRate" />
+    <result column="map_lat" jdbcType="LONGVARCHAR" property="mapLat" />
+    <result column="map_lng" jdbcType="LONGVARCHAR" property="mapLng" />
+    <result column="gps_lat" jdbcType="LONGVARCHAR" property="gpsLat" />
+    <result column="gps_lng" jdbcType="LONGVARCHAR" property="gpsLng" />
+    <result column="paid_amt_bank_no" jdbcType="LONGVARCHAR" property="paidAmtBankNo" />
+    <result column="paid_amt_bank_name" jdbcType="LONGVARCHAR" property="paidAmtBankName" />
+    <result column="paid_amt_bank_owner" jdbcType="LONGVARCHAR" property="paidAmtBankOwner" />
+    <result column="paid_amt_bank_no_img" jdbcType="LONGVARCHAR" property="paidAmtBankNoImg" />
+    <result column="jcq_img" jdbcType="LONGVARCHAR" property="jcqImg" />
+    <result column="door_off_img" jdbcType="LONGVARCHAR" property="doorOffImg" />
+    <result column="stqd_img" jdbcType="LONGVARCHAR" property="stqdImg" />
+    <result column="shop_inside_full_img" jdbcType="LONGVARCHAR" property="shopInsideFullImg" />
+    <result column="shop_front_full_img" jdbcType="LONGVARCHAR" property="shopFrontFullImg" />
+    <result column="night_img" jdbcType="LONGVARCHAR" property="nightImg" />
+    <result column="round_environment_img" jdbcType="LONGVARCHAR" property="roundEnvironmentImg" />
+    <result column="jc_shop_lvl" jdbcType="LONGVARCHAR" property="jcShopLvl" />
+    <result column="delivery_mobile" jdbcType="LONGVARCHAR" property="deliveryMobile" />
+    <result column="delivery_address" jdbcType="LONGVARCHAR" property="deliveryAddress" />
+    <result column="log_off_time" jdbcType="TIMESTAMP" property="logOffTime" />
+    <result column="account_begin_time" jdbcType="TIMESTAMP" property="accountBeginTime" />
+    <result column="account_end_time" jdbcType="TIMESTAMP" property="accountEndTime" />
+    <result column="account_amt" jdbcType="DECIMAL" property="accountAmt" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    shop_no, loc_id, address, management_type, channel_id, mobile, sale_game, user_Id, 
+    sale_proxy_user_id, shop_status, rent_type, house_rent, shop_area, deposit, dc_sale_rate, 
+    jk_sale_rate, shop_lvl, house_type, loc_type, account_period_status, sign_up_type, 
+    sign_up_date, get_info_type, if_err_delete, shop_front_img, shop_inside_img, shop_inside_sale_img, 
+    application_front_img, application_img, house_contract_img, real_name_img, shop_dot_img, 
+    finance_type, comm_bank_no, comm_bank_name, comm_bank_owner, comm_bank_no_img, create_user_id, 
+    create_time, last_update_user, last_update_time, remark, jc_sale_rate, map_lat, map_lng, 
+    gps_lat, gps_lng, paid_amt_bank_no, paid_amt_bank_name, paid_amt_bank_owner, paid_amt_bank_no_img, 
+    jcq_img, door_off_img, stqd_img, shop_inside_full_img, shop_front_full_img, night_img, 
+    round_environment_img, jc_shop_lvl, delivery_mobile, delivery_address, log_off_time, 
+    account_begin_time, account_end_time, account_amt
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from shop
+    where shop_no = #{shopNo,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    <!--@mbg.generated-->
+    delete from shop
+    where shop_no = #{shopNo,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.cpx.encrypt.domain.Shop">
+    <!--@mbg.generated-->
+    insert into shop (shop_no, loc_id, address, 
+      management_type, channel_id, mobile, 
+      sale_game, user_Id, sale_proxy_user_id, 
+      shop_status, rent_type, house_rent, 
+      shop_area, deposit, dc_sale_rate, 
+      jk_sale_rate, shop_lvl, house_type, 
+      loc_type, account_period_status, sign_up_type, 
+      sign_up_date, get_info_type, if_err_delete, 
+      shop_front_img, shop_inside_img, shop_inside_sale_img, 
+      application_front_img, application_img, house_contract_img, 
+      real_name_img, shop_dot_img, finance_type, 
+      comm_bank_no, comm_bank_name, comm_bank_owner, 
+      comm_bank_no_img, create_user_id, create_time, 
+      last_update_user, last_update_time, remark, 
+      jc_sale_rate, map_lat, map_lng, 
+      gps_lat, gps_lng, paid_amt_bank_no, 
+      paid_amt_bank_name, paid_amt_bank_owner, 
+      paid_amt_bank_no_img, jcq_img, door_off_img, 
+      stqd_img, shop_inside_full_img, shop_front_full_img, 
+      night_img, round_environment_img, 
+      jc_shop_lvl, delivery_mobile, delivery_address, 
+      log_off_time, account_begin_time, account_end_time, 
+      account_amt)
+    values (#{shopNo,jdbcType=VARCHAR}, #{locId,jdbcType=INTEGER}, #{address,jdbcType=VARCHAR}, 
+      #{managementType,jdbcType=VARCHAR}, #{channelId,jdbcType=INTEGER}, #{mobile,jdbcType=VARCHAR}, 
+      #{saleGame,jdbcType=VARCHAR}, #{userId,jdbcType=INTEGER}, #{saleProxyUserId,jdbcType=INTEGER}, 
+      #{shopStatus,jdbcType=INTEGER}, #{rentType,jdbcType=VARCHAR}, #{houseRent,jdbcType=DECIMAL}, 
+      #{shopArea,jdbcType=DECIMAL}, #{deposit,jdbcType=VARCHAR}, #{dcSaleRate,jdbcType=DECIMAL}, 
+      #{jkSaleRate,jdbcType=DECIMAL}, #{shopLvl,jdbcType=VARCHAR}, #{houseType,jdbcType=VARCHAR}, 
+      #{locType,jdbcType=VARCHAR}, #{accountPeriodStatus,jdbcType=INTEGER}, #{signUpType,jdbcType=VARCHAR}, 
+      #{signUpDate,jdbcType=DATE}, #{getInfoType,jdbcType=VARCHAR}, #{ifErrDelete,jdbcType=INTEGER}, 
+      #{shopFrontImg,jdbcType=VARCHAR}, #{shopInsideImg,jdbcType=VARCHAR}, #{shopInsideSaleImg,jdbcType=VARCHAR}, 
+      #{applicationFrontImg,jdbcType=VARCHAR}, #{applicationImg,jdbcType=VARCHAR}, #{houseContractImg,jdbcType=VARCHAR}, 
+      #{realNameImg,jdbcType=VARCHAR}, #{shopDotImg,jdbcType=VARCHAR}, #{financeType,jdbcType=VARCHAR}, 
+      #{commBankNo,jdbcType=VARCHAR}, #{commBankName,jdbcType=VARCHAR}, #{commBankOwner,jdbcType=VARCHAR}, 
+      #{commBankNoImg,jdbcType=VARCHAR}, #{createUserId,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{lastUpdateUser,jdbcType=INTEGER}, #{lastUpdateTime,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR}, 
+      #{jcSaleRate,jdbcType=DECIMAL}, #{mapLat,jdbcType=LONGVARCHAR}, #{mapLng,jdbcType=LONGVARCHAR}, 
+      #{gpsLat,jdbcType=LONGVARCHAR}, #{gpsLng,jdbcType=LONGVARCHAR}, #{paidAmtBankNo,jdbcType=LONGVARCHAR}, 
+      #{paidAmtBankName,jdbcType=LONGVARCHAR}, #{paidAmtBankOwner,jdbcType=LONGVARCHAR}, 
+      #{paidAmtBankNoImg,jdbcType=LONGVARCHAR}, #{jcqImg,jdbcType=LONGVARCHAR}, #{doorOffImg,jdbcType=LONGVARCHAR}, 
+      #{stqdImg,jdbcType=LONGVARCHAR}, #{shopInsideFullImg,jdbcType=LONGVARCHAR}, #{shopFrontFullImg,jdbcType=LONGVARCHAR}, 
+      #{nightImg,jdbcType=LONGVARCHAR}, #{roundEnvironmentImg,jdbcType=LONGVARCHAR}, 
+      #{jcShopLvl,jdbcType=LONGVARCHAR}, #{deliveryMobile,jdbcType=LONGVARCHAR}, #{deliveryAddress,jdbcType=LONGVARCHAR}, 
+      #{logOffTime,jdbcType=TIMESTAMP}, #{accountBeginTime,jdbcType=TIMESTAMP}, #{accountEndTime,jdbcType=TIMESTAMP}, 
+      #{accountAmt,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="com.cpx.encrypt.domain.Shop">
+    <!--@mbg.generated-->
+    insert into shop
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="shopNo != null">
+        shop_no,
+      </if>
+      <if test="locId != null">
+        loc_id,
+      </if>
+      <if test="address != null">
+        address,
+      </if>
+      <if test="managementType != null">
+        management_type,
+      </if>
+      <if test="channelId != null">
+        channel_id,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+      <if test="saleGame != null">
+        sale_game,
+      </if>
+      <if test="userId != null">
+        user_Id,
+      </if>
+      <if test="saleProxyUserId != null">
+        sale_proxy_user_id,
+      </if>
+      <if test="shopStatus != null">
+        shop_status,
+      </if>
+      <if test="rentType != null">
+        rent_type,
+      </if>
+      <if test="houseRent != null">
+        house_rent,
+      </if>
+      <if test="shopArea != null">
+        shop_area,
+      </if>
+      <if test="deposit != null">
+        deposit,
+      </if>
+      <if test="dcSaleRate != null">
+        dc_sale_rate,
+      </if>
+      <if test="jkSaleRate != null">
+        jk_sale_rate,
+      </if>
+      <if test="shopLvl != null">
+        shop_lvl,
+      </if>
+      <if test="houseType != null">
+        house_type,
+      </if>
+      <if test="locType != null">
+        loc_type,
+      </if>
+      <if test="accountPeriodStatus != null">
+        account_period_status,
+      </if>
+      <if test="signUpType != null">
+        sign_up_type,
+      </if>
+      <if test="signUpDate != null">
+        sign_up_date,
+      </if>
+      <if test="getInfoType != null">
+        get_info_type,
+      </if>
+      <if test="ifErrDelete != null">
+        if_err_delete,
+      </if>
+      <if test="shopFrontImg != null">
+        shop_front_img,
+      </if>
+      <if test="shopInsideImg != null">
+        shop_inside_img,
+      </if>
+      <if test="shopInsideSaleImg != null">
+        shop_inside_sale_img,
+      </if>
+      <if test="applicationFrontImg != null">
+        application_front_img,
+      </if>
+      <if test="applicationImg != null">
+        application_img,
+      </if>
+      <if test="houseContractImg != null">
+        house_contract_img,
+      </if>
+      <if test="realNameImg != null">
+        real_name_img,
+      </if>
+      <if test="shopDotImg != null">
+        shop_dot_img,
+      </if>
+      <if test="financeType != null">
+        finance_type,
+      </if>
+      <if test="commBankNo != null">
+        comm_bank_no,
+      </if>
+      <if test="commBankName != null">
+        comm_bank_name,
+      </if>
+      <if test="commBankOwner != null">
+        comm_bank_owner,
+      </if>
+      <if test="commBankNoImg != null">
+        comm_bank_no_img,
+      </if>
+      <if test="createUserId != null">
+        create_user_id,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="lastUpdateUser != null">
+        last_update_user,
+      </if>
+      <if test="lastUpdateTime != null">
+        last_update_time,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+      <if test="jcSaleRate != null">
+        jc_sale_rate,
+      </if>
+      <if test="mapLat != null">
+        map_lat,
+      </if>
+      <if test="mapLng != null">
+        map_lng,
+      </if>
+      <if test="gpsLat != null">
+        gps_lat,
+      </if>
+      <if test="gpsLng != null">
+        gps_lng,
+      </if>
+      <if test="paidAmtBankNo != null">
+        paid_amt_bank_no,
+      </if>
+      <if test="paidAmtBankName != null">
+        paid_amt_bank_name,
+      </if>
+      <if test="paidAmtBankOwner != null">
+        paid_amt_bank_owner,
+      </if>
+      <if test="paidAmtBankNoImg != null">
+        paid_amt_bank_no_img,
+      </if>
+      <if test="jcqImg != null">
+        jcq_img,
+      </if>
+      <if test="doorOffImg != null">
+        door_off_img,
+      </if>
+      <if test="stqdImg != null">
+        stqd_img,
+      </if>
+      <if test="shopInsideFullImg != null">
+        shop_inside_full_img,
+      </if>
+      <if test="shopFrontFullImg != null">
+        shop_front_full_img,
+      </if>
+      <if test="nightImg != null">
+        night_img,
+      </if>
+      <if test="roundEnvironmentImg != null">
+        round_environment_img,
+      </if>
+      <if test="jcShopLvl != null">
+        jc_shop_lvl,
+      </if>
+      <if test="deliveryMobile != null">
+        delivery_mobile,
+      </if>
+      <if test="deliveryAddress != null">
+        delivery_address,
+      </if>
+      <if test="logOffTime != null">
+        log_off_time,
+      </if>
+      <if test="accountBeginTime != null">
+        account_begin_time,
+      </if>
+      <if test="accountEndTime != null">
+        account_end_time,
+      </if>
+      <if test="accountAmt != null">
+        account_amt,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="shopNo != null">
+        #{shopNo,jdbcType=VARCHAR},
+      </if>
+      <if test="locId != null">
+        #{locId,jdbcType=INTEGER},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="managementType != null">
+        #{managementType,jdbcType=VARCHAR},
+      </if>
+      <if test="channelId != null">
+        #{channelId,jdbcType=INTEGER},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="saleGame != null">
+        #{saleGame,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="saleProxyUserId != null">
+        #{saleProxyUserId,jdbcType=INTEGER},
+      </if>
+      <if test="shopStatus != null">
+        #{shopStatus,jdbcType=INTEGER},
+      </if>
+      <if test="rentType != null">
+        #{rentType,jdbcType=VARCHAR},
+      </if>
+      <if test="houseRent != null">
+        #{houseRent,jdbcType=DECIMAL},
+      </if>
+      <if test="shopArea != null">
+        #{shopArea,jdbcType=DECIMAL},
+      </if>
+      <if test="deposit != null">
+        #{deposit,jdbcType=VARCHAR},
+      </if>
+      <if test="dcSaleRate != null">
+        #{dcSaleRate,jdbcType=DECIMAL},
+      </if>
+      <if test="jkSaleRate != null">
+        #{jkSaleRate,jdbcType=DECIMAL},
+      </if>
+      <if test="shopLvl != null">
+        #{shopLvl,jdbcType=VARCHAR},
+      </if>
+      <if test="houseType != null">
+        #{houseType,jdbcType=VARCHAR},
+      </if>
+      <if test="locType != null">
+        #{locType,jdbcType=VARCHAR},
+      </if>
+      <if test="accountPeriodStatus != null">
+        #{accountPeriodStatus,jdbcType=INTEGER},
+      </if>
+      <if test="signUpType != null">
+        #{signUpType,jdbcType=VARCHAR},
+      </if>
+      <if test="signUpDate != null">
+        #{signUpDate,jdbcType=DATE},
+      </if>
+      <if test="getInfoType != null">
+        #{getInfoType,jdbcType=VARCHAR},
+      </if>
+      <if test="ifErrDelete != null">
+        #{ifErrDelete,jdbcType=INTEGER},
+      </if>
+      <if test="shopFrontImg != null">
+        #{shopFrontImg,jdbcType=VARCHAR},
+      </if>
+      <if test="shopInsideImg != null">
+        #{shopInsideImg,jdbcType=VARCHAR},
+      </if>
+      <if test="shopInsideSaleImg != null">
+        #{shopInsideSaleImg,jdbcType=VARCHAR},
+      </if>
+      <if test="applicationFrontImg != null">
+        #{applicationFrontImg,jdbcType=VARCHAR},
+      </if>
+      <if test="applicationImg != null">
+        #{applicationImg,jdbcType=VARCHAR},
+      </if>
+      <if test="houseContractImg != null">
+        #{houseContractImg,jdbcType=VARCHAR},
+      </if>
+      <if test="realNameImg != null">
+        #{realNameImg,jdbcType=VARCHAR},
+      </if>
+      <if test="shopDotImg != null">
+        #{shopDotImg,jdbcType=VARCHAR},
+      </if>
+      <if test="financeType != null">
+        #{financeType,jdbcType=VARCHAR},
+      </if>
+      <if test="commBankNo != null">
+        #{commBankNo,jdbcType=VARCHAR},
+      </if>
+      <if test="commBankName != null">
+        #{commBankName,jdbcType=VARCHAR},
+      </if>
+      <if test="commBankOwner != null">
+        #{commBankOwner,jdbcType=VARCHAR},
+      </if>
+      <if test="commBankNoImg != null">
+        #{commBankNoImg,jdbcType=VARCHAR},
+      </if>
+      <if test="createUserId != null">
+        #{createUserId,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateUser != null">
+        #{lastUpdateUser,jdbcType=INTEGER},
+      </if>
+      <if test="lastUpdateTime != null">
+        #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="jcSaleRate != null">
+        #{jcSaleRate,jdbcType=DECIMAL},
+      </if>
+      <if test="mapLat != null">
+        #{mapLat,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="mapLng != null">
+        #{mapLng,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="gpsLat != null">
+        #{gpsLat,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="gpsLng != null">
+        #{gpsLng,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="paidAmtBankNo != null">
+        #{paidAmtBankNo,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="paidAmtBankName != null">
+        #{paidAmtBankName,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="paidAmtBankOwner != null">
+        #{paidAmtBankOwner,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="paidAmtBankNoImg != null">
+        #{paidAmtBankNoImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="jcqImg != null">
+        #{jcqImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="doorOffImg != null">
+        #{doorOffImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="stqdImg != null">
+        #{stqdImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="shopInsideFullImg != null">
+        #{shopInsideFullImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="shopFrontFullImg != null">
+        #{shopFrontFullImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="nightImg != null">
+        #{nightImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="roundEnvironmentImg != null">
+        #{roundEnvironmentImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="jcShopLvl != null">
+        #{jcShopLvl,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="deliveryMobile != null">
+        #{deliveryMobile,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="deliveryAddress != null">
+        #{deliveryAddress,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="logOffTime != null">
+        #{logOffTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="accountBeginTime != null">
+        #{accountBeginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="accountEndTime != null">
+        #{accountEndTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="accountAmt != null">
+        #{accountAmt,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cpx.encrypt.domain.Shop">
+    <!--@mbg.generated-->
+    update shop
+    <set>
+      <if test="locId != null">
+        loc_id = #{locId,jdbcType=INTEGER},
+      </if>
+      <if test="address != null">
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="managementType != null">
+        management_type = #{managementType,jdbcType=VARCHAR},
+      </if>
+      <if test="channelId != null">
+        channel_id = #{channelId,jdbcType=INTEGER},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="saleGame != null">
+        sale_game = #{saleGame,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        user_Id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="saleProxyUserId != null">
+        sale_proxy_user_id = #{saleProxyUserId,jdbcType=INTEGER},
+      </if>
+      <if test="shopStatus != null">
+        shop_status = #{shopStatus,jdbcType=INTEGER},
+      </if>
+      <if test="rentType != null">
+        rent_type = #{rentType,jdbcType=VARCHAR},
+      </if>
+      <if test="houseRent != null">
+        house_rent = #{houseRent,jdbcType=DECIMAL},
+      </if>
+      <if test="shopArea != null">
+        shop_area = #{shopArea,jdbcType=DECIMAL},
+      </if>
+      <if test="deposit != null">
+        deposit = #{deposit,jdbcType=VARCHAR},
+      </if>
+      <if test="dcSaleRate != null">
+        dc_sale_rate = #{dcSaleRate,jdbcType=DECIMAL},
+      </if>
+      <if test="jkSaleRate != null">
+        jk_sale_rate = #{jkSaleRate,jdbcType=DECIMAL},
+      </if>
+      <if test="shopLvl != null">
+        shop_lvl = #{shopLvl,jdbcType=VARCHAR},
+      </if>
+      <if test="houseType != null">
+        house_type = #{houseType,jdbcType=VARCHAR},
+      </if>
+      <if test="locType != null">
+        loc_type = #{locType,jdbcType=VARCHAR},
+      </if>
+      <if test="accountPeriodStatus != null">
+        account_period_status = #{accountPeriodStatus,jdbcType=INTEGER},
+      </if>
+      <if test="signUpType != null">
+        sign_up_type = #{signUpType,jdbcType=VARCHAR},
+      </if>
+      <if test="signUpDate != null">
+        sign_up_date = #{signUpDate,jdbcType=DATE},
+      </if>
+      <if test="getInfoType != null">
+        get_info_type = #{getInfoType,jdbcType=VARCHAR},
+      </if>
+      <if test="ifErrDelete != null">
+        if_err_delete = #{ifErrDelete,jdbcType=INTEGER},
+      </if>
+      <if test="shopFrontImg != null">
+        shop_front_img = #{shopFrontImg,jdbcType=VARCHAR},
+      </if>
+      <if test="shopInsideImg != null">
+        shop_inside_img = #{shopInsideImg,jdbcType=VARCHAR},
+      </if>
+      <if test="shopInsideSaleImg != null">
+        shop_inside_sale_img = #{shopInsideSaleImg,jdbcType=VARCHAR},
+      </if>
+      <if test="applicationFrontImg != null">
+        application_front_img = #{applicationFrontImg,jdbcType=VARCHAR},
+      </if>
+      <if test="applicationImg != null">
+        application_img = #{applicationImg,jdbcType=VARCHAR},
+      </if>
+      <if test="houseContractImg != null">
+        house_contract_img = #{houseContractImg,jdbcType=VARCHAR},
+      </if>
+      <if test="realNameImg != null">
+        real_name_img = #{realNameImg,jdbcType=VARCHAR},
+      </if>
+      <if test="shopDotImg != null">
+        shop_dot_img = #{shopDotImg,jdbcType=VARCHAR},
+      </if>
+      <if test="financeType != null">
+        finance_type = #{financeType,jdbcType=VARCHAR},
+      </if>
+      <if test="commBankNo != null">
+        comm_bank_no = #{commBankNo,jdbcType=VARCHAR},
+      </if>
+      <if test="commBankName != null">
+        comm_bank_name = #{commBankName,jdbcType=VARCHAR},
+      </if>
+      <if test="commBankOwner != null">
+        comm_bank_owner = #{commBankOwner,jdbcType=VARCHAR},
+      </if>
+      <if test="commBankNoImg != null">
+        comm_bank_no_img = #{commBankNoImg,jdbcType=VARCHAR},
+      </if>
+      <if test="createUserId != null">
+        create_user_id = #{createUserId,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateUser != null">
+        last_update_user = #{lastUpdateUser,jdbcType=INTEGER},
+      </if>
+      <if test="lastUpdateTime != null">
+        last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="jcSaleRate != null">
+        jc_sale_rate = #{jcSaleRate,jdbcType=DECIMAL},
+      </if>
+      <if test="mapLat != null">
+        map_lat = #{mapLat,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="mapLng != null">
+        map_lng = #{mapLng,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="gpsLat != null">
+        gps_lat = #{gpsLat,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="gpsLng != null">
+        gps_lng = #{gpsLng,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="paidAmtBankNo != null">
+        paid_amt_bank_no = #{paidAmtBankNo,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="paidAmtBankName != null">
+        paid_amt_bank_name = #{paidAmtBankName,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="paidAmtBankOwner != null">
+        paid_amt_bank_owner = #{paidAmtBankOwner,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="paidAmtBankNoImg != null">
+        paid_amt_bank_no_img = #{paidAmtBankNoImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="jcqImg != null">
+        jcq_img = #{jcqImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="doorOffImg != null">
+        door_off_img = #{doorOffImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="stqdImg != null">
+        stqd_img = #{stqdImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="shopInsideFullImg != null">
+        shop_inside_full_img = #{shopInsideFullImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="shopFrontFullImg != null">
+        shop_front_full_img = #{shopFrontFullImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="nightImg != null">
+        night_img = #{nightImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="roundEnvironmentImg != null">
+        round_environment_img = #{roundEnvironmentImg,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="jcShopLvl != null">
+        jc_shop_lvl = #{jcShopLvl,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="deliveryMobile != null">
+        delivery_mobile = #{deliveryMobile,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="deliveryAddress != null">
+        delivery_address = #{deliveryAddress,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="logOffTime != null">
+        log_off_time = #{logOffTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="accountBeginTime != null">
+        account_begin_time = #{accountBeginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="accountEndTime != null">
+        account_end_time = #{accountEndTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="accountAmt != null">
+        account_amt = #{accountAmt,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where shop_no = #{shopNo,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cpx.encrypt.domain.Shop">
+    <!--@mbg.generated-->
+    update shop
+    set loc_id = #{locId,jdbcType=INTEGER},
+      address = #{address,jdbcType=VARCHAR},
+      management_type = #{managementType,jdbcType=VARCHAR},
+      channel_id = #{channelId,jdbcType=INTEGER},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      sale_game = #{saleGame,jdbcType=VARCHAR},
+      user_Id = #{userId,jdbcType=INTEGER},
+      sale_proxy_user_id = #{saleProxyUserId,jdbcType=INTEGER},
+      shop_status = #{shopStatus,jdbcType=INTEGER},
+      rent_type = #{rentType,jdbcType=VARCHAR},
+      house_rent = #{houseRent,jdbcType=DECIMAL},
+      shop_area = #{shopArea,jdbcType=DECIMAL},
+      deposit = #{deposit,jdbcType=VARCHAR},
+      dc_sale_rate = #{dcSaleRate,jdbcType=DECIMAL},
+      jk_sale_rate = #{jkSaleRate,jdbcType=DECIMAL},
+      shop_lvl = #{shopLvl,jdbcType=VARCHAR},
+      house_type = #{houseType,jdbcType=VARCHAR},
+      loc_type = #{locType,jdbcType=VARCHAR},
+      account_period_status = #{accountPeriodStatus,jdbcType=INTEGER},
+      sign_up_type = #{signUpType,jdbcType=VARCHAR},
+      sign_up_date = #{signUpDate,jdbcType=DATE},
+      get_info_type = #{getInfoType,jdbcType=VARCHAR},
+      if_err_delete = #{ifErrDelete,jdbcType=INTEGER},
+      shop_front_img = #{shopFrontImg,jdbcType=VARCHAR},
+      shop_inside_img = #{shopInsideImg,jdbcType=VARCHAR},
+      shop_inside_sale_img = #{shopInsideSaleImg,jdbcType=VARCHAR},
+      application_front_img = #{applicationFrontImg,jdbcType=VARCHAR},
+      application_img = #{applicationImg,jdbcType=VARCHAR},
+      house_contract_img = #{houseContractImg,jdbcType=VARCHAR},
+      real_name_img = #{realNameImg,jdbcType=VARCHAR},
+      shop_dot_img = #{shopDotImg,jdbcType=VARCHAR},
+      finance_type = #{financeType,jdbcType=VARCHAR},
+      comm_bank_no = #{commBankNo,jdbcType=VARCHAR},
+      comm_bank_name = #{commBankName,jdbcType=VARCHAR},
+      comm_bank_owner = #{commBankOwner,jdbcType=VARCHAR},
+      comm_bank_no_img = #{commBankNoImg,jdbcType=VARCHAR},
+      create_user_id = #{createUserId,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      last_update_user = #{lastUpdateUser,jdbcType=INTEGER},
+      last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP},
+      remark = #{remark,jdbcType=VARCHAR},
+      jc_sale_rate = #{jcSaleRate,jdbcType=DECIMAL},
+      map_lat = #{mapLat,jdbcType=LONGVARCHAR},
+      map_lng = #{mapLng,jdbcType=LONGVARCHAR},
+      gps_lat = #{gpsLat,jdbcType=LONGVARCHAR},
+      gps_lng = #{gpsLng,jdbcType=LONGVARCHAR},
+      paid_amt_bank_no = #{paidAmtBankNo,jdbcType=LONGVARCHAR},
+      paid_amt_bank_name = #{paidAmtBankName,jdbcType=LONGVARCHAR},
+      paid_amt_bank_owner = #{paidAmtBankOwner,jdbcType=LONGVARCHAR},
+      paid_amt_bank_no_img = #{paidAmtBankNoImg,jdbcType=LONGVARCHAR},
+      jcq_img = #{jcqImg,jdbcType=LONGVARCHAR},
+      door_off_img = #{doorOffImg,jdbcType=LONGVARCHAR},
+      stqd_img = #{stqdImg,jdbcType=LONGVARCHAR},
+      shop_inside_full_img = #{shopInsideFullImg,jdbcType=LONGVARCHAR},
+      shop_front_full_img = #{shopFrontFullImg,jdbcType=LONGVARCHAR},
+      night_img = #{nightImg,jdbcType=LONGVARCHAR},
+      round_environment_img = #{roundEnvironmentImg,jdbcType=LONGVARCHAR},
+      jc_shop_lvl = #{jcShopLvl,jdbcType=LONGVARCHAR},
+      delivery_mobile = #{deliveryMobile,jdbcType=LONGVARCHAR},
+      delivery_address = #{deliveryAddress,jdbcType=LONGVARCHAR},
+      log_off_time = #{logOffTime,jdbcType=TIMESTAMP},
+      account_begin_time = #{accountBeginTime,jdbcType=TIMESTAMP},
+      account_end_time = #{accountEndTime,jdbcType=TIMESTAMP},
+      account_amt = #{accountAmt,jdbcType=DECIMAL}
+    where shop_no = #{shopNo,jdbcType=VARCHAR}
+  </update>
+</mapper>

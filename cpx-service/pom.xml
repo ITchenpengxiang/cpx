@@ -67,7 +67,7 @@
 
         <!--dubbo-->
      <!--   <dependency>
-            <groupId>com.cpx.base</groupId>
+            <groupId>com.cpx.encrypt</groupId>
             <artifactId>cpx-base-dubbo</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>-->

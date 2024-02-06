@@ -1,0 +1,19 @@
+server:
+  port: 8849
+
+spring:
+  application:
+    name: china-encrypt-service
+  datasource:
+    url: jdbc:mysql://192.168.12.90:3306/tjshop?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+    username: tjshop
+    password: tjshop888
+#mybatis-Plus配置
+mybatis-plus:
+  mapper-locations: /mapper/*.xml,/mapper/*/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.cpx.encrypt.domain
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

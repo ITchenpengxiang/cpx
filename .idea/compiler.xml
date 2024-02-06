@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cpx-agent-service" />
+        <module name="cpx-base-china-encrypt" />
         <module name="cpx-interface" />
         <module name="cpx-test-service" />
         <module name="cpx-common" />
@@ -26,6 +27,7 @@
       <module name="cpx-agent-gateway" options="-parameters" />
       <module name="cpx-agent-service" options="-parameters" />
       <module name="cpx-base" options="-parameters" />
+      <module name="cpx-base-china-encrypt" options="-parameters" />
       <module name="cpx-base-dubbo" options="-parameters" />
       <module name="cpx-base-excel" options="-parameters" />
       <module name="cpx-base-kafka" options="-parameters" />

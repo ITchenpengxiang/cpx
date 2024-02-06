@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>com.cpx</groupId>
-		<artifactId>cpx-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
+    <parent>
+        <groupId>com.cpx</groupId>
+        <artifactId>cpx-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
 
-	<groupId>com.cpx.base</groupId>
-	<artifactId>cpx-base</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<name>cpx-base</name>
-	<modules>
-		<module>cpx-base-excel</module>
+    <groupId>com.cpx.base</groupId>
+    <artifactId>cpx-base</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>cpx-base</name>
+    <modules>
+        <module>cpx-base-excel</module>
         <module>cpx-base-thread-pool</module>
-		<module>cpx-base-dubbo</module>
-	</modules>
+        <module>cpx-base-dubbo</module>
+        <module>cpx-base-china-encrypt</module>
+    </modules>
 
+    <!--导入web包-->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--导入测试包-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <!--导入工具类-->
+        <dependency>
+            <groupId>com.cpx.base</groupId>
+            <artifactId>cpx-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
-	<dependencies>
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-web</artifactId>
-	</dependency>
-
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-test</artifactId>
-	</dependency>
-		<!--导入工具类-->
-		<dependency>
-			<groupId>com.cpx.base</groupId>
-			<artifactId>cpx-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
-</dependencies>
-
+    </dependencies>
 
 
 </project>
